@@ -1,0 +1,36 @@
+--SELECT categoryid, COUNT(*) AS ProductCount FROM Products
+--GROUP BY categoryid
+--SELECT * FROM Products ORDER BY unitprice DESC LIMIT 5
+--SELECT supplierid, AVG(unitprice) AS OrtalamaFiyat FROM Products
+--GROUP BY supplierid
+--SELECT categoryid, AVG(unitprice) AS OrtalamaFiyat FROM Products WHERE unitprice > 100
+--GROUP BY categoryid
+--SELECT * FROM 'Order Details' WHERE unitprice * quantity > 1000
+--SELECT * FROM Orders
+--ORDER BY shippeddate DESC LIMIT 10
+--SELECT AVG(unitprice) AS ortalamaFiyat FROM Products
+--SELECT SUM(unitsinstock) AS toplamStok FROM Products WHERE unitprice > 50
+--SELECT MIN(orderdate) AS enEskiSiparis FROM Orders
+--SELECT employeeid, firstname, lastname, DATEDIFF(YEAR, hiredate, GETDATE()) AS kacYıl FROM Employees
+--SELECT orderid, ROUND(SUM(unitprice * quantity), 2) AS Yuvarlak FROM 'Order Details'
+--GROUP BY orderid
+--SELECT COUNT(*) AS StokÜrünSayısı FROM Products WHERE unitsinstock > 0
+--SELECT MIN(unitprice) AS MinFiyat, MAX(unitprice) AS MaxFiyat FROM Products
+--SELECT YEAR(orderdate) AS OrderYear, COUNT(*) AS OrderCount FROM Orders GROUP BY YEAR(orderdate)
+--SELECT firstname || ' ' || lastname AS 'İsim Soyisim' FROM Employees
+--SELECT city, LEN(city) AS SehirUzunluk FROM Customers
+--SELECT productname, ROUND(unitprice, 2) AS YuvarlakFiyat FROM Products
+--SELECT COUNT(*) AS ToplamSiparis FROM Orders
+--SELECT categoryid, AVG(unitprice) AS OrtalamaFiyat FROM Products
+--GROUP BY categoryid
+--SELECT 
+    --(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM Orders)) AS SevkEdilmeyenSiparisYuzdesi
+--FROM Orders
+--WHERE shippeddate IS NULL
+--SELECT MAX(unitprice) * 1.10 AS YuzdeOnArttırılmısFiyat FROM Products
+--SELECT productname, SUBSTRING(productname, 1, 3) AS IlkUcKarakter FROM Products
+--SELECT YEAR(orderdate) AS SiparisYili, MONTH(orderdate) AS SiparisAyi, COUNT(*) AS SiparisSayisi FROM Orders
+--GROUP BY YEAR(orderdate), MONTH(orderdate)
+--SELECT orderid, ROUND(SUM(unitprice * quantity), 2) AS Yuvarlak FROM 'Order Details'
+--GROUP BY orderid
+--SELECT SUM(unitprice) AS StokDisiToplamFiyat FROM Products WHERE unitsinstock = 0
